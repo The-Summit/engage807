@@ -1,0 +1,70 @@
+/*!
+ * Theme Name: Summit
+ *
+ * Copyright 2013 Ambassador Enterprises
+ */
+
+html{
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+}
+body{
+	background: none;
+}
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+}
+blockquote {
+  background: $gray-lighter;
+  position: relative;
+  border-left: 10px solid $brand-primary;
+  padding: 2em 0;
+  @extend .col-xs-12;
+  @extend .col-md-10;
+  @extend .col-md-offset-1;
+}
+blockquote:after {
+	color: tint($brand-warning,30%);
+	content: '\201D';
+	font-size: 130px;
+	line-height: 0;
+	position: absolute;
+	top: 35px;
+	left: 90%;
+	font-family: Cooper Std Black,Georgia, serif;
+	float: right;
+	@extend .col-md-2;
+	@extend .hidden-sm;
+	@extend .hidden-xs;
+}
+blockquote p{
+  font-weight: 900;
+  @extend .col-xs-12;
+  @extend .col-md-10;
+}
+blockquote cite{
+	font-style: italic;
+	font-size: 1.3em;
+	display: block;
+	text-align: right;
+	padding: 0 3em;
+	color: $gray-light;
+	clear: left;
+	@extend .col-md-5;
+	@extend .col-md-offset-5;
+}
+blockquote cite:before{
+	content: "\2014";
+}
+mark{
+	background: $brand-warning;
+}
+hr{
+	border: 0;
+	height: 1px;
+	clear: both;
+	background: tint($brand-primary,50%);
+	margin: 25px 0;
+	@include background(linear-gradient(left,$body-bg, tint($brand-primary,50%), $body-bg));
+}

@@ -1,0 +1,202 @@
+body, html {
+	margin: 0;
+	overflow-y: scroll;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+body{
+	padding-top: $navbar-height + 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.bg{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+.accent{
+	color: $brand-warning;
+	font-family: 'Waiting for the Sunrise', cursive;
+	text-transform: none;
+	font-style: italic;
+}
+h1.accent{
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.btn-apply{
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	z-index: 99;
+}
+.caption{
+	position: absolute;
+	background: $trans-black;
+	box-shadow: 0px 0px 3px 1px #5a5a5a;
+	text-align: left;
+	bottom: 0;
+	color: #fff;
+	padding: 5px;
+	h3{
+		@extend .accent;
+		text-align: left;
+		font-size: $font-size-h3 * 1;
+	}
+	p{
+		font-size: $font-size-small;
+		line-height: 1.2
+	}
+	ul,li{
+		font-size: $font-size-small * .75;
+	}
+	.btn{
+		margin-right: 20px;
+		padding: 4px 5px;
+		line-height: 1em;
+		font-size: $font-size-small;
+	}
+}
+@media (min-width: $grid-float-breakpoint) {
+	.caption{
+		padding: 15px;
+		p{
+			font-size: $font-size-base;
+			line-height: $line-height-base;
+		}
+		ul,li{
+			font-size: $font-size-base * .75;
+		}
+		h3{
+			font-size: $font-size-h3 * 1.5;
+		}
+		.btn{
+			padding: 6px 12px;
+			font-size: $font-size-base;
+			line-height: $line-height-base;
+		}
+	}
+	h1.accent{
+		font-size: 24px;
+	}
+}
+@media (min-width: $screen-md-min ) {
+	.caption{
+		padding: 10px 40px;
+		p{
+			font-size: $font-size-base;
+		}
+		ul,li{
+			font-size: $font-size-base*.8;
+		}
+		h3{
+			font-size: $font-size-h3 * 1.75;
+		}
+	}
+	h1.accent{
+		font-size: 60px;
+	}
+}
+@media (min-width: $screen-lg-min ) {
+	.caption{
+		padding: 10px 40px;
+		p{
+			font-size: $font-size-large;
+		}
+		ul,li{
+			font-size: $font-size-large*.8;
+		}
+		.btn{
+			font-size: $font-size-large;
+		}
+	}
+	h1.accent{
+		font-size: 80px;
+	}
+}
+.full-panel.scrollable{
+	overflow-y: auto;
+}
+.push-down{
+	margin-top: 20px;
+}
+
+p.intro{
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.webe{
+	position: absolute;
+	top: $navbar-height + 10px;
+	background-color: #fff;
+	box-shadow: 0px 0px 3px 1px #5a5a5a;
+	padding: 20px 10px;
+	opacity: .6;
+	h1{
+		font-size: $font-size-h1 * .75;
+		color: #000;
+		margin: 0;
+	}
+	h2{
+		color: $brand-primary;
+		font-size: $font-size-h2 * .75;
+		margin: 0;
+		padding-left: 1em;
+	}
+	h3{
+		text-align: right;
+		font-size: $font-size-h3 * .75;
+		font-family: 'Waiting for the Sunrise', cursive;
+		font-style: italic;
+		text-transform: none;
+		color: darken($link-color,20%);
+	}
+}
+.webe:hover{
+	text-decoration: none;
+}
+@media (min-width: $grid-float-breakpoint) {
+	.webe{
+		top: $navbar-height + 20px;
+		h1{
+			font-size: $font-size-h1 * 1.5;	
+		}
+		h2{
+			font-size: $font-size-h2 * 1.5;
+		}
+		h3{
+			font-size: $font-size-h3 * .75;
+		}
+	}
+}
+@media (min-width: $screen-md-min ) {
+	.webe{
+		top: $navbar-height + 30px;
+		h1{
+			font-size: $font-size-h1 * 2;
+		}
+		h2{
+			font-size: $font-size-h2 * 2;
+		}
+		h3{
+			font-size: $font-size-h3 * .75;
+		}
+	}
+}
+@media (min-width: $screen-lg-min ) {
+	.webe{
+		top: $navbar-height + 50px;
+		h1{
+			font-size: $font-size-h1 * 3;
+		}
+		h2{
+			font-size: $font-size-h2 * 1.5;
+		}
+		h3{
+			font-size: $font-size-h3 * 1.25;
+		}
+	}
+}
