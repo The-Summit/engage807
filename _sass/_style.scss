@@ -4,11 +4,17 @@ html{
 }
 body{
 	background: inherit;
-	body { padding-bottom: 70px; }
+	padding-bottom: 70px;
+}
+p{
+	margin: 0 0 20px;	
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;
 	font-weight: bold;
+}
+h2{
+	margin-bottom: 30px;	
 }
 blockquote {
   background: $gray-lighter;
@@ -77,12 +83,53 @@ address{
 	list-style: none;
 	margin: 0;	
 	padding: 0;
-	li{
-		height: 800px;
+	>li{
 		padding: 20px;
+		overflow: auto;
+		ul{
+			text-align: left;
+			list-style: none;
+			em{
+				color: $brand-warning;
+				font-family: "Waiting for the Sunrise";
+				font-style: italic;
+				font-weight: 700;
+				font-size: $font-size-h4;
+			}
+			img{
+				@extend .img-responsive;
+				@extend .img-circle;
+				margin: 0 0 20px 0;
+			}
+			li{
+				font-size: $font-size-h6;
+			}
+		}
+	}
+	.bg-blue{
+		background-color: $link-color;
+	}
+	.bg-green{
+		background-color: $brand-primary;	
+	}
+	.align-left{
+		text-align: left;
+	}
+	.align-right{
+		text-align: right;
 	}
 }
-.navbar .logo{
-	height: $navbar-height - 15;
-	margin: 7px 0;
+.navbar{
+	.logo{
+		height: $navbar-height - 15;
+		margin: 7px 0;
+	}
+	.social-group{
+		margin: 0 20px 0 0;
+		.social{
+			height: ($navbar-height - 15) / 2;
+			margin: 5px 0 0 0;
+		}
+	}
+
 }
