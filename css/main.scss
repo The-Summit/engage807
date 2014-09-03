@@ -62,24 +62,10 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
-$spacing-unit:     30px;
-
-/**
- * Set `margin-bottom` to maintain vertycal rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "style";
 @import "ae/animations";
-@import "ae/defaults";
 @import "ae/forms";
 @import "ae/icons";
 @import "ae/nav";
-@import "ae/onepage";
-@import "ae/variables";

@@ -9,6 +9,7 @@ header.container{
 }
 .navbar{
 	box-shadow: 0px 0px 3px 1px #222;
+	color: $navbar-default-color;
 	@extend .collapse;
 	.nav{
 		margin-top: 0;

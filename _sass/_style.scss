@@ -4,9 +4,11 @@ html{
 }
 body{
 	background: inherit;
+	body { padding-bottom: 70px; }
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;
+	font-weight: bold;
 }
 blockquote {
   background: $gray-lighter;
@@ -65,11 +67,22 @@ hr{
 	background-image: -o-linear-gradient(left, #000, #018651, #000);
 	background-image: linear-gradient(left, #000, #018651, #000);
 }
-
-.logo{
-	position: fixed;
-	opacity: .5;
+address{
+	@extend h6;
+	color: $link-color;
+	line-height: 1em;
+	margin: 5px 30px;
 }
 .post-list{
 	list-style: none;
+	margin: 0;	
+	padding: 0;
+	li{
+		height: 800px;
+		padding: 20px;
+	}
+}
+.navbar .logo{
+	height: $navbar-height - 15;
+	margin: 7px 0;
 }

@@ -5,7 +5,7 @@ $almost-white: #f7f7f7;
 
 //Color Overrides
 $brand-primary: rgba(1, 134, 81,1);
-$link-color: rgba(0, 136, 204,1);
+$link-color: rgba(0, 68, 102, 1);
 $brand-secondary: rgba(1, 87, 62,1);
 $brand-danger: rgba(223, 82, 80,1);
 $brand-warning: rgba(239, 166, 5,1);
@@ -31,25 +31,32 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 //Text
 $font-family-sans-serif:	'Cabin', sans-serif;
 $font-family-base:			$font-family-sans-serif;
+$line-height-base:			1.428581429;
+$font-size-base:				24px;
+$text-color:					$almost-white;
+
+//Headings
 $headings-font-family:		'Cabin', sans-serif;
 $headings-font-weight:		700;
-$line-height-base:			1.428581429;
-$font-size-base: 			16px;
+$headings-color: 				$almost-white;
+$headings-line-height:		.8em;
+$font-size-h1:		floor(($font-size-base * 7));
+$font-size-h2:		floor(($font-size-base * 4.326));
+$font-size-h3:		ceil(($font-size-base * 2.674));
+$font-size-h4:		ceil(($font-size-base * 1.653));
+$font-size-h5:		$font-size-base;
+$font-size-h6:		ceil(($font-size-base * 0.85));
 
 // Basics of a navbar
 $navbar-height:						75px;
 $navbar-collapsed-height:			35px;
-$navbar-default-color:				#fff;
-$navbar-default-link-color:			#fff;
+$navbar-default-color:				$link-color;
+$navbar-default-link-color:			$link-color;
 $navbar-default-link-hover-color:	$brand-primary;
 $navbar-default-link-active-color:	$brand-primary;
-$navbar-default-bg:					$trans-black;
+$navbar-default-bg:					$trans-white;
 $navbar-default-link-active-bg:		darken($navbar-default-bg, 3.5%);
 $navbar-default-border:				darken($navbar-default-bg, 6.5%);
-
-// Carousels
-$carousel-indicator-border-color: 	$brand-primary;
-$carousel-indicator-active-bg:		$brand-primary;
 
 //Sizing
 // Small screen / tablet

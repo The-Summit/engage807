@@ -3,12 +3,13 @@ layout: default
 ---
 
 <div class="home">
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>{{ post.title }}</h2>
-      </li>
-    {% endfor %}
-  </ul>
+	<ul class="post-list">
+	{% for post in site.posts reversed%}
+		<li style="background-color: {% cycle site.data.colors.green, site.data.colors.blue %}">
+			<h1>{{ post.title }}</h1>
+			<h2>{{ post.subtitle }}</h2>
+			<div class="col-sm-6">{{ post.content }}</div>
+		</li>
+	{% endfor %}
+	</ul>
 </div>
