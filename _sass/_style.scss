@@ -1,16 +1,9 @@
-/*!
- * Theme Name: Summit
- *
- * Copyright 2013 Ambassador Enterprises
- */
-
 html{
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: $brand-primary;
 	min-height: 100%;
 }
 body{
-	background: none;
+	background: inherit;
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;
@@ -66,5 +59,17 @@ hr{
 	clear: both;
 	background: tint($brand-primary,50%);
 	margin: 25px 0;
-	@include background(linear-gradient(left,$body-bg, tint($brand-primary,50%), $body-bg));
+	background-image: -webkit-linear-gradient(left, #000, #018651, #000);
+	background-image: -moz-linear-gradient(left, #000, #018651, #000);
+	background-image: -ms-linear-gradient(left, #000, #018651, #000);
+	background-image: -o-linear-gradient(left, #000, #018651, #000);
+	background-image: linear-gradient(left, #000, #018651, #000);
+}
+
+.logo{
+	position: fixed;
+	opacity: .5;
+}
+.post-list{
+	list-style: none;
 }
