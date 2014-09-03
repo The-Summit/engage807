@@ -14,7 +14,8 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: bold;
 }
 h2{
-	margin-bottom: 30px;	
+	margin-bottom: .75em;
+	color: $brand-warning;
 }
 blockquote {
   background: $gray-lighter;
@@ -89,28 +90,33 @@ address{
 		ul{
 			text-align: left;
 			list-style: none;
+			li{
+				font-size: $font-size-h6;
+				[class^="icon-"]{
+					margin: 0 auto;	
+				}
+			}
 			em{
 				color: $brand-warning;
 				font-family: "Waiting for the Sunrise";
 				font-style: italic;
 				font-weight: 700;
 				font-size: $font-size-h4;
-			}
-			img{
-				@extend .img-responsive;
-				@extend .img-circle;
-				margin: 0 0 20px 0;
-			}
-			li{
-				font-size: $font-size-h6;
+				line-height: 1em;
 			}
 		}
 	}
 	.bg-blue{
 		background-color: $link-color;
+		[class^="icon-"]{
+			color: $link-color;
+		}
 	}
 	.bg-green{
-		background-color: $brand-primary;	
+		background-color: $brand-primary;
+		[class^="icon-"]{
+			color: $brand-primary;	
+		}
 	}
 	.align-left{
 		text-align: left;

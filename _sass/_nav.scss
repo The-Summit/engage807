@@ -65,35 +65,6 @@ header.container{
 			text-shadow: none;
 		}
 	}
-	.navbar-nav .open .dropdown-menu{
-		padding-left: 20px;
-		background-color: #ddd;
-		opacity: .8;
-		left: 0;
-		>li>a{
-			line-height: 1em;
-			color: #000;
-		}
-		.glyphicon{
-			color: #000;
-			top: 0;			
-		}
-		.social-buttons{
-			text-align: center;
-			.social{
-				display: inline-block;
-				padding: 5px 10px;
-				font-size: 1.25em;
-			}
-			.social:hover{
-				background-color: transparent;
-			}
-			[class^="icomoon-"]:hover:before{
-				color: $brand-primary;
-				@extend .animate-move;
-			}
-		}
-	}
 	.navbar-brand{
 		position: absolute;
 		left: 10px;
@@ -102,18 +73,6 @@ header.container{
 	}
 	.logo img{
 		height: (($navbar-collapsed-height * .8));
-	}
-	.glyphicon{
-		cursor: pointer;
-		color: $navbar-default-link-color;
-		width: 20px;
-		overflow: hidden;
-		font-size: .85em;
-		top: 3px;
-		@extend .animate-move;
-	}
-	.glyphicon:hover{
-		color: $navbar-default-link-hover-color;
 	}
 	.menu-item-type-search.open{
 		margin-bottom: 0;
