@@ -78,7 +78,6 @@ address{
 	@extend h6;
 	color: $link-color;
 	line-height: 1em;
-	margin: 5px 30px;
 	text-align: left;
 }
 .post-list{
@@ -116,6 +115,15 @@ address{
 			color: $brand-warning;	
 		}
 	}
+	.bg-green{
+		background-color: $brand-primary;
+		[class^="icon-"]{
+			color: $brand-primary;	
+		}
+	}
+	.bg-black{
+		background-color: #444;	
+	}
 	.memberships{
 		@extend .col-md-4;
 		@extend .col-md-offset-4;
@@ -136,12 +144,7 @@ address{
 			background: rgba(255,255,255,.75);
 		}
 	}
-	.bg-green{
-		background-color: $brand-primary;
-		[class^="icon-"]{
-			color: $brand-primary;	
-		}
-	}
+	
 	.align-left{
 		text-align: left;
 	}
@@ -150,20 +153,34 @@ address{
 	}
 }
 .navbar{
-	text-align: center;
 	.logo{
 		height: $navbar-height - 15;
 		margin: 7px 0;
+		&.summit{
+			display: inline-block;
+			position: relative;
+		}
 	}
 	.social-group{
-		margin: 0 20px 0 0;
+		position: relative;
+		display: inline-block;
+		a{
+			position: absolute;	
+		}
+		a.top{
+			top: 	5px;
+		}
+		a.bottom{
+			top: 	($navbar-height - 15) / 2 + 5px;
+		}
 		.social{
 			height: ($navbar-height - 15) / 2;
 			margin: 5px 0 0 0;
 		}
 	}
 	.contact{
-		margin: 8px 0;
+		margin: 8px auto;
+		display: block;
 		padding: 5px 15px;
 		font-size: 1.5em;
 		text-transform: uppercase;

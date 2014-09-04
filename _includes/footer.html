@@ -1,16 +1,21 @@
 <footer class="navbar-fixed-bottom navbar navbar-default">
 	<div class="container-fluid">
-		<img class="navbar-left logo img-responsive" src="{{ site.baseurl }}{{ site.logo }}" />
-		<address class="navbar-left">
-			1025 W. Rudisill Blvd. <br />
-			Fort Wayne, IN 46807 <br />
-			P: 260.446.3226
-		</address>
-		<img class="navbar-right logo img-responsive" src="{{ site.baseurl }}{{ site.images }}/thesummit.png" />
-		<a href="#" class="contact btn btn-primary btn-lg">Get Started!</a>
-		<div class="navbar-right social-group">
-			<a target="_blank" href="http://twitter.com/@thesummit_fw"><img class="social img-circle img-responsive" src="{{ site.baseurl }}{{ site.images }}twitter.png" /></a>
-			<a target="_blank" href="https://www.facebook.com/pages/The-Summit/106991936070983"><img class="social img-circle img-responsive" src="{{ site.baseurl }}{{ site.images }}facebook.png" />
+		<div class="col-md-2">
+			<img class="logo" src="{{ site.baseurl }}{{ site.logo }}" />
+		</div>
+		<div class="col-md-2 col-md-offset-3">
+			<a href="#" class="contact btn btn-primary btn-lg">Get Started!</a>
+		</div>
+		<div class="col-md-2 col-md-offset-3">
+			<img class="logo summit" src="{{ site.baseurl }}{{ site.images }}/thesummit.png" />
+			<div class="social-group">
+				<a target="_blank" class="top" href="http://twitter.com/@thesummit_fw">
+					<img class="social img-circle" src="{{ site.baseurl }}{{ site.images }}twitter.png" />
+				</a>
+				<a target="_blank" class="bottom" href="https://www.facebook.com/pages/The-Summit/106991936070983">
+					<img class="social img-circle" src="{{ site.baseurl }}{{ site.images }}facebook.png" />
+				</a>
+			</div>
 		</div>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
