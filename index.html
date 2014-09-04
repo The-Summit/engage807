@@ -6,7 +6,7 @@ layout: default
 	<ul class="post-list">
 	{% for post in site.posts %}
 		<li class="{% cycle 'bg-green', 'bg-blue' %} {% cycle 'text-left', 'text-right' %}">
-			<h1>{{ post.title }}</h1>
+			<h1 id="{{post.title | join}}">{{ post.title }}</h1>
 			<h2>{{ post.subtitle }}</h2>
 			<div class="col-sm-12">{{ post.content }}</div>
 		</li>
