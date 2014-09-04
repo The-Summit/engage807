@@ -8,6 +8,11 @@
   font-weight: normal;
   font-style: normal;
 }
+[class^="icon-"]{
+	display: block;
+	width: 50%;
+	margin: 0 auto;	
+}
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;

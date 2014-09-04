@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 	<ul class="post-list">
-	{% for post in site.posts reversed%}
+	{% for post in site.posts %}
 		<li class="{% cycle 'bg-green', 'bg-blue' %} {% cycle 'text-left', 'text-right' %}">
 			<h1>{{ post.title }}</h1>
 			<h2>{{ post.subtitle }}</h2>

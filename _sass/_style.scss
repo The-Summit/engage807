@@ -79,13 +79,14 @@ address{
 	color: $link-color;
 	line-height: 1em;
 	margin: 5px 30px;
+	text-align: left;
 }
 .post-list{
 	list-style: none;
 	margin: 0;	
 	padding: 0;
 	>li{
-		padding: 20px;
+		padding: 20px 20px 60px 20px;
 		overflow: auto;
 		ul{
 			text-align: left;
@@ -111,6 +112,9 @@ address{
 		[class^="icon-"]{
 			color: $link-color;
 		}
+		a,a:link,a:visited{
+			color: $brand-warning;	
+		}
 	}
 	.bg-green{
 		background-color: $brand-primary;
@@ -126,6 +130,7 @@ address{
 	}
 }
 .navbar{
+	text-align: center;
 	.logo{
 		height: $navbar-height - 15;
 		margin: 7px 0;
@@ -136,6 +141,13 @@ address{
 			height: ($navbar-height - 15) / 2;
 			margin: 5px 0 0 0;
 		}
+	}
+	.contact{
+		margin: 8px 0;
+		padding: 5px 15px;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 }
