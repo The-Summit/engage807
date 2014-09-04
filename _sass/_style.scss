@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'mohavebold';
-    src: url('mohave-bold-webfont.eot');
-    src: url('mohave-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('mohave-bold-webfont.woff') format('woff'),
-         url('mohave-bold-webfont.ttf') format('truetype'),
-         url('mohave-bold-webfont.svg#mohavebold') format('svg');
+    src: url('font/mohave-bold-webfont.eot');
+    src: url('font/mohave-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/mohave-bold-webfont.woff') format('woff'),
+         url('font/mohave-bold-webfont.ttf') format('truetype'),
+         url('font/mohave-bold-webfont.svg#mohavebold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -173,7 +173,7 @@ address{
 		}
 	}
 	.social-group{
-		position: relative;
+		position: absolute;
 		display: inline-block;
 		a{
 			position: absolute;	
@@ -182,7 +182,7 @@ address{
 			top: 	5px;
 		}
 		a.bottom{
-			top: 	($navbar-height - 15) / 2 + 5px;
+			top: 	($navbar-height - 15) / 2 + 10px;
 		}
 		.social{
 			height: ($navbar-height - 15) / 2;
@@ -190,12 +190,14 @@ address{
 		}
 	}
 	.contact{
-		margin: 8px auto;
+		margin: 12px auto;
 		display: block;
-		padding: 5px 15px;
-		font-size: 1.5em;
+		padding: 10px 5px;
+		font-size: 1.25em;
+		line-height: 1em;
 		text-transform: uppercase;
 		font-weight: 700;
+		font-family: $headings-font-family;
 	}
 
 }

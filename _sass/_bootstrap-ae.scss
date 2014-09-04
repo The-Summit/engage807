@@ -14,7 +14,7 @@ $carousel-text-shadow: none;
 
 $state-success-text:             $brand-primary;
 $state-success-bg:               tint($brand-primary,90%);
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-border:          darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                $link-color;
 $state-info-bg:                  tint($link-color,90%);
@@ -36,7 +36,7 @@ $font-size-base:				24px;
 $text-color:					$almost-white;
 
 //Headings
-$headings-font-family:		'Cabin', sans-serif;
+$headings-font-family:		'mohavebold', sans-serif;
 $headings-font-weight:		700;
 $headings-color: 				$almost-white;
 $headings-line-height:		.8em;
@@ -54,7 +54,7 @@ $navbar-default-color:				$link-color;
 $navbar-default-link-color:			$link-color;
 $navbar-default-link-hover-color:	$brand-primary;
 $navbar-default-link-active-color:	$brand-primary;
-$navbar-default-bg:					$trans-white;
+$navbar-default-bg:					$almost-white;
 $navbar-default-link-active-bg:		darken($navbar-default-bg, 3.5%);
 $navbar-default-border:				darken($navbar-default-bg, 6.5%);
 
